@@ -1,0 +1,19 @@
+header nav {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: var(--spacing) 0;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing);
+}
+
+header a {
+    text-transform: uppercase;
+}

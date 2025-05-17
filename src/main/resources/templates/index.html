@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}">Title</title>
+    <link rel="icon" href="image/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header th:insert="${header}"></header>
+    <main>
+        <div id="index-title">
+            <div class="title">
+                <h1 th:text="${h1}">Title</h1>
+            </div>
+            <span>{DEV}</span>
+        </div>
+        <div id="about">
+            <div id="about-text">
+                <h2>Engenheiro de Software & Desenvolvedor BackEnd</h2>
+                <p>Sou Leandro Cardoso, um apaixonado por tecnologia desde a infância, o nerd viciado em solucionar problemas com eficiência e segurança.</p>
+                <p>Tenho como stacks principais, mas jamais se limitando a elas, as tecnologias: Java, SpringBoot, Git, PostgreSQL e Docker.</p>
+                <p>Também tenho conhecimentos em outras tecnologias como: Python, Django, Flask, JavaScript, TypeScript, React, C, C++ e C#.</p>
+                <p>Focado em código limpo, veloz, seguro e proficional.</p>
+                <a>Veja mais...</a>
+            </div>
+            <img src="image/setup.png" alt="setup">
+        </div>
+    </main>
+    <footer th:insert="${footer}"></footer>
+</body>
+</html>
