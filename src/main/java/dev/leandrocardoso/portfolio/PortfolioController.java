@@ -19,4 +19,14 @@ public class PortfolioController {
         return "index";
     }
 
+    @GetMapping("/contatos")
+    public String contatos(Model model) {
+        model.addAttribute("title", "Leandro Cardoso {DEV}");
+        model.addAttribute("h1", "Contatos");
+        model.addAttribute("header", "modules/header");
+        model.addAttribute("divH1", "modules/h1");
+        model.addAttribute("footer", "modules/footer");
+        return "contacts";
+    }
+
 }

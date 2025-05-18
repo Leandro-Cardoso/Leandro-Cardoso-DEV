@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title th:text="${title}">Title</title>
+  <link rel="icon" href="image/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/contacts.css">
+</head>
+<body>
+  <header th:insert="${header}"></header>
+  <main>
+    <div class="title">
+      <h1 th:text="${h1}">Title</h1>
+    </div>
+    <div id="contacts">
+      <ul>
+        <a href="https://wa.me/5522992399041" target="_blank">
+          <li class="card">
+            <img src="svg/whatsapp.svg" alt="whatsapp">
+            <div>
+              <p>Whatsapp</p>
+              <p>+55 22 99239-9041</p>
+            </div>
+          </li>
+        </a>
+        <a href="mailto:leandrocardosodev@gmail.com?subject=Portfolio" target="_blank">
+          <li class="card">
+            <img src="svg/mail.svg" alt="mail">
+            <div>
+              <p>E-mail</p>
+              <p>leandrocardosodev@gmail.com</p>
+            </div>
+          </li>
+        </a>
+        <a href="https://github.com/Leandro-Cardoso" target="_blank">
+          <li class="card">
+            <img src="svg/github.svg" alt="github">
+            <div>
+              <p>GitHub</p>
+              <p>github.com/Leandro-Cardoso</p>
+            </div>
+          </li>
+        </a>
+        <a href="https://www.linkedin.com/in/leandro-cardoso-992529266/" target="_blank">
+          <li class="card">
+            <img src="svg/linkedin.svg" alt="linkedin">
+            <div>
+              <p>LinkedIn</p>
+              <p>www.linkedin.com/in/leandro-cardoso-992529266</p>
+            </div>
+          </li>
+        </a>
+        <a href="https://x.com/LeandroCDev" target="_blank">
+          <li class="card">
+            <img src="svg/x.svg" alt="x">
+            <div>
+              <p>X</p>
+              <p>x.com/LeandroCDev</p>
+            </div>
+          </li>
+        </a>
+      </ul>
+      <img src="image/leandro-positive.png" alt="positivo" id="illustration">
+    </div>
+  </main>
+  <footer th:insert="${footer}"></footer>
+</body>
+</html>

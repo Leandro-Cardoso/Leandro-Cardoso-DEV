@@ -1,15 +1,24 @@
 footer {
-    width: 100vw;
-    text-align: center;
+    width: 100%;
     color: var(--color-primary);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: var(--spacing);
 }
 
 footer a {
     color: var(--color-primary);
     font-weight: var(--font-weight);
-    margin: 0;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing);
+}
+
+footer img {
+    height: 50px;
 }
