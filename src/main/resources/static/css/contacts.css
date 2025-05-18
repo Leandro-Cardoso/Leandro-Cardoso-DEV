@@ -54,9 +54,7 @@ ul {
 }
 
 #illustration {
-    width: 30%;
-    height: 30%;
-    min-width: 300px;
+    width: 400px;
 }
 
 @media (max-width: 1199px) {
