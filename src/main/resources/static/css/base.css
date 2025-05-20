@@ -53,7 +53,6 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
-    display: block;
     margin: 0;
     padding: 0;
 }
@@ -70,14 +69,12 @@ body {
 p {
     font-size: var(--font-size);
     line-height: var(--line-height);
-    margin-bottom: var(--spacing);
 }
 
 h1, h2, h3 {
     font-weight: var(--font-weight-bold);
     text-transform: capitalize;
     color: var(--color-primary);
-    display: inline-block;
 }
 
 h1 {
@@ -106,6 +103,13 @@ a:hover {
     color: var(--color-primary);
 }
 
+hr {
+    height: 2px;
+    background-color: var(--color-primary);
+    color: var(--color-primary);
+    border: 0;
+}
+
 strong {
     color: var(--color-primary);
     font-weight: var(--font-weight-bold);
@@ -123,10 +127,18 @@ main {
     background-color: var(--color-primary);
     padding: var(--spacing);
     width: fit-content;
+    margin-bottom: var(--spacing);
 }
 
 .card {
     background-color: var(--color-background-secundary);
     padding: var(--spacing);
     border-radius: var(--border-radius);
+}
+
+.list-none {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
 }

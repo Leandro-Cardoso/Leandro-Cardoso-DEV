@@ -11,14 +11,18 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+
     <header th:insert="${header}"></header>
+
     <main>
+
         <div id="index-title">
             <div class="title">
                 <h1 th:text="${h1}">Title</h1>
             </div>
             <span>{DEV}</span>
         </div>
+
         <div id="about">
             <div id="about-text">
                 <h2>Engenheiro de Software & Desenvolvedor BackEnd</h2>
@@ -26,11 +30,14 @@
                 <p>Tenho como stacks principais, mas jamais se limitando a elas, as tecnologias: Java, SpringBoot, Git, PostgreSQL e Docker.</p>
                 <p>Também tenho conhecimentos em outras tecnologias como: Python, Django, Flask, JavaScript, TypeScript, React, C, C++ e C#.</p>
                 <p>Focado em código limpo, veloz, seguro e proficional.</p>
-                <a>Veja mais...</a>
+                <a href="/sobre">Veja mais...</a>
             </div>
             <img src="image/setup.png" alt="setup">
         </div>
+
     </main>
+
     <footer th:insert="${footer}"></footer>
+
 </body>
 </html>

@@ -5,6 +5,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: var(--spacing);
     padding: var(--spacing);
 }
 
@@ -14,6 +15,7 @@ footer a {
 }
 
 footer ul {
+    list-style-type: none;
     display: flex;
     flex-direction: row;
     gap: var(--spacing);

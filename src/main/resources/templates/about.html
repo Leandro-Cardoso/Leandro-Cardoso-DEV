@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title th:text="${title}">Title</title>
+  <link rel="icon" href="image/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+
+  <header th:insert="${header}"></header>
+
+  <main>
+
+    <div class="title">
+      <h1 th:text="${h1}">Title</h1>
+    </div>
+
+    <div id="hard-skills">
+      <h2>Hard Skills:</h2>
+      <div id="hard-skills-resume">
+        <div>
+          <h2>Engenheiro de Software & Desenvolvedor BackEnd</h2>
+          <p>Sou Leandro Cardoso, um apaixonado por tecnologia desde a infância, o nerd viciado em solucionar problemas com eficiência e segurança.</p>
+          <p>Tenho como stacks principais, mas jamais se limitando a elas, as tecnologias: <strong>Java</strong>, <strong>SpringBoot</strong>, <strong>Git</strong>, <strong>PostgreSQL</strong> e <strong>Docker</strong>.</p>
+          <p>Também tenho conhecimentos em outras tecnologias como: <strong>Python</strong>, <strong>Django</strong>, <strong>Flask</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>React</strong>, <strong>C</strong>, <strong>C++</strong> e <strong>C#</strong>.</p>
+          <p>Focado sempre em um código limpo, veloz, seguro e proficional.</p>
+          <p>Estou focado no <strong>BackEnd</strong>, mas no futuro, pretendo estudar também <strong>IA</strong> e <strong>Segurança de Dados</strong>. Dois tópicos importantíssimos no contexto atual, e que também gosto muito.</p>
+        </div>
+        <img src="image/setup.png" alt="hard skills">
+      </div>
+      <div id="hard-skills-others">
+        <div id="academic-skills-languages">
+          <div class="card">
+            <h2>Acadêmicas</h2>
+            <ul class="list-none">
+              <li>
+                <p><strong>Instituição:</strong> UniVassouras</p>
+                <p><strong>Curso:</strong> Engenharia de Software (presencial)</p>
+                <p><strong>Início:</strong> 02/2023</p>
+                <p><strong>Término:</strong> 02/2027</p>
+              </li>
+              <hr>
+              <li>
+                <p><strong>Instituição:</strong> UERJ</p>
+                <p><strong>Curso:</strong> Física (presencial)</p>
+                <p><strong>Início:</strong> 01/2017</p>
+                <p><strong>Término:</strong> 01/2020 (incompleto)</p>
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <h2>Conhecimentos</h2>
+            <ul id="skills">
+              <li>Java</li>
+              <li>SprintBoot</li>
+              <li>Git</li>
+              <li>SQL</li>
+              <li>Docker</li>
+              <li>Python</li>
+              <li>Django</li>
+              <li>Flask</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>C</li>
+              <li>C++</li>
+              <li>C#</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h2>Línguas</h2>
+            <ul class="list-none">
+              <li>
+                <p><strong>Nativa:</strong> Português Brasileiro</p>
+              </li>
+              <hr>
+              <li>
+                <p><strong>Lingua:</strong> Inglês</p>
+                <p><strong>Leitura e escrita:</strong> Intermediário</p>
+                <p><strong>Conversação:</strong> Intermediário</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Cursos</h2>
+          <ul class="list-none">
+            <li>
+              <p><strong>Instituição:</strong> SENAI</p>
+              <p><strong>Curso:</strong> Básico de Cibersegurança</p>
+              <p><strong>Carga Horária:</strong> 64 h</p>
+              <p><strong>Ano:</strong> 2024</p>
+            </li>
+            <hr>
+            <li>
+              <p><strong>Instituição:</strong> SENAI</p>
+              <p><strong>Curso:</strong> Nivelamento de Cibersegurança</p>
+              <p><strong>Carga Horária:</strong> 80 h</p>
+              <p><strong>Ano:</strong> 2024</p>
+            </li>
+            <hr>
+            <li>
+              <p><strong>Instituição:</strong> Udacity</p>
+              <p><strong>Curso:</strong> Fundamentos de Data Science I</p>
+              <p><strong>Carga Horária:</strong> 80 h</p>
+              <p><strong>Ano:</strong> 2019</p>
+            </li>
+            <hr>
+            <li>
+              <p><strong>Instituição:</strong> USP</p>
+              <p><strong>Curso:</strong> Introdução à Ciência da Computação em Python</p>
+              <p><strong>Carga Horária:</strong> 29 h</p>
+              <p><strong>Ano:</strong> 2019</p>
+            </li>
+            <hr>
+            <li>
+              <p><strong>Instituição:</strong> Microlins</p>
+              <p><strong>Curso:</strong> Web Designer (presencial)</p>
+              <p><strong>Carga Horária:</strong> 92 h</p>
+              <p><strong>Ano:</strong> 2006</p>
+            </li>
+            <hr>
+            <li>
+              <p><strong>Instituição:</strong> Microlins</p>
+              <p><strong>Curso:</strong> Redes de Computadores (presencial)</p>
+              <p><strong>Carga Horária:</strong> 72 h</p>
+              <p><strong>Ano:</strong> 2005</p>
+            </li>
+            <hr>
+            <li>
+              <p><strong>Instituição:</strong> Microlins</p>
+              <p><strong>Curso:</strong> Montagem e Manutenção de Computadores (presencial)</p>
+              <p><strong>Carga Horária:</strong> 72 h</p>
+              <p><strong>Ano:</strong> 2005</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="soft-skills">
+      <h2>Soft Skills:</h2>
+    </div>
+
+    <div id="experiences">
+      <h2>Experiências Profissionais:</h2>
+    </div>
+
+    <div id="hobbies">
+      <h2>Meus Hobbies:</h2>
+    </div>
+
+    <div id="history">
+      <h2>Minha História:</h2>
+    </div>
+
+  </main>
+
+  <footer th:insert="${footer}"></footer>
+
+</body>
+</html>

@@ -29,4 +29,14 @@ public class PortfolioController {
         return "contacts";
     }
 
+    @GetMapping("/sobre")
+    public String sobre(Model model) {
+        model.addAttribute("title", "Leandro Cardoso {DEV}");
+        model.addAttribute("h1", "Sobre");
+        model.addAttribute("header", "modules/header");
+        model.addAttribute("divH1", "modules/h1");
+        model.addAttribute("footer", "modules/footer");
+        return "about";
+    }
+
 }

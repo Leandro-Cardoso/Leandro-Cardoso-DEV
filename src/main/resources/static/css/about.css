@@ -1,0 +1,49 @@
+#hard-skills {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+}
+
+#hard-skills-resume {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#hard-skills-resume img,
+#hard-skills-resume div {
+    width: 50%;
+}
+
+#hard-skills-resume div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+}
+
+#hard-skills-others {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--spacing);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+}
+
+#academic-skills-languages {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+}
+
+#skills {
+    list-style-type: "▶ ";
+    padding-left: var(--spacing);
+    margin-left: var(--spacing);
+}
