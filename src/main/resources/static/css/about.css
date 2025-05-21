@@ -1,18 +1,21 @@
-#hard-skills {
+#hard-skills,
+#experiences,
+#hobbies {
     display: flex;
     flex-direction: column;
     gap: var(--spacing);
 }
 
-#hard-skills-resume {
+#hard-skills-resume,
+#hobbies div {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-#hard-skills-resume img,
-#hard-skills-resume div {
+.description,
+.illustration {
     width: 50%;
 }
 
