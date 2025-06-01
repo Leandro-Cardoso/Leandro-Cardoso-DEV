@@ -26,8 +26,12 @@ public class Tech {
 
     private String imgUrl;
 
-    @ManyToMany
-    @JoinColumn(name = "project_id")
+    @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @JoinTable(
+            name = "tb_projects_techs",
+            joinColumns = @JoinColumn(name = "project_id"), // Coluna na tabela de junção que referencia o ProjectModel
+            inverseJoinColumns = @JoinColumn(name = "tech_id") // Coluna na tabela de junção que referencia o TechnologyModel
+    )
     private List<Project> projects;
 
 }
