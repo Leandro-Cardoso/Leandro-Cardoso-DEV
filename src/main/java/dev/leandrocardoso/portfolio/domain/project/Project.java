@@ -31,8 +31,10 @@ public class Project {
 
     private String platform;
 
+    @Column(name = "imgurl")
     private String imgUrl;
 
+    @Column(name = "projecturl")
     private String projectUrl;
 
     private Date date;
